@@ -1,11 +1,12 @@
 import React from 'react'
 import { Input, Row, Col } from 'antd';
+import {addTask} from '../services/api'
 
 const { Search } = Input;
 
 function AddBox() {
     const add = (value) => {
-        console.log(value)
+        addTask(value)
     }
 
     return (

@@ -1,14 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import InputAdd from '../components/AddBox'
-import ListWork from '../components/ListWork'
-import Filter from '../components/Filter'
+import InputAdd from '../../components/AddBox'
+import ListWork from '../../components/ListWork'
+import Filter from '../../components/Filter'
 import {Row, Col} from 'antd'
 
 
 const AppTodo = () => {
     localStorage.setItem('myCat', 'Tom');
-    return (
-        <>
+    return (     
             <Row>
                 <Col span={24}>
                     <InputAdd/>
@@ -17,7 +16,6 @@ const AppTodo = () => {
                     />
                 </Col>
             </Row>
-        </>
     )
 }
 export default AppTodo
